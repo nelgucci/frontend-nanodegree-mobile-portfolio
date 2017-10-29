@@ -53,3 +53,14 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+### Optimizing the Web page
+__________________
+* Compress the size of the images using online tools for image optimization like [trimage](https://trimage.org/) & [imageoptim](https://imageoptim.com/online)
+* Inlined the css style instead of linking it to a style sheet and removed the google font and inlined it in the css.
+##### -Pizza web page
+* measuring the speed using devtools
+* In `changePizzaSizes function` - move the variables out of the the loop since it can be implemented once
+* Same with `updatePositions Function` - the scrollTop was placed outside the for loop
+* In the `updatePositions Function` - the number of pizzas moving through the backgroung was reduced to 30
+* `async` attribute was added and some script tag was moved to the end of the body
